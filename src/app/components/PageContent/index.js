@@ -1,7 +1,10 @@
+"use client"
+import AppRoutes from "@/app/Routes";
+
 function AppPageContent() {
   return (
     <div className="appPageContent">
-      <h2>antd design practice</h2>
+     <AppRoutes />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 function AppFooter() {
   return (
     <div className="appFooter">
-      <h2>antd design practice</h2>
+      <h2>antd design practice Footer page</h2>
     </div>
   );
 }
