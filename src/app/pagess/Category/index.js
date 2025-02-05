@@ -1,5 +1,9 @@
+import Products from "@/app/components/Products";
+
 function Category() {
-  return <div>Category page</div>;
+  return <div>
+    <Products />
+  </div>;
 }
 
 export default Category;

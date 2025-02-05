@@ -1,14 +1,22 @@
 import { Menu } from "antd";
+import { useNavigate } from "react-router-dom";
 
 function AppHeader() {
+const navigate=useNavigate()
+
+const onClickMenu=(item)=>{
+    navigate(`/${item.key}`)
+}
+
   return (
     <div className="appHeader">
       <Menu 
+      onClick={onClickMenu}
       mode="horizontal"
       items={[
         {
             label: "Home",
-            key:"home"
+            key:""
         },
         {
             label: "Men",
@@ -42,7 +50,7 @@ function AppHeader() {
                 },
                 {
                     label:"Women's Bags",
-                    key:"drbagsss",
+                    key:"bags",
                 },
                 {
                     label:"Women's Jewellery",
